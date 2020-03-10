@@ -58,7 +58,8 @@ h1, h2 {
     margin: 0;
 }
 .content-wrap {
-    width: 900px;
+    max-width: 900px;
+    width: 85%;
     margin: 0 auto;
     padding: 60px 0;
 }
@@ -122,8 +123,12 @@ header{
 /* Education
 ---------------------------------*/
 .education{
-    background-color: white;
-    color: black;
+    background-image: url("../images/leaves.jpg");
+    /*background-color: white;*/
+    /*color: black;*/
+    background-size: 400px 400px;
+    background-position: top right;
+    background-repeat: no-repeat;
 }
 /* Contact
 ---------------------------------*/
