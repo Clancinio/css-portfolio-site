@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Dean Clancy - Portfolio</title>
   <!-- Google Fonts-->
-  <link href="https://fonts.googleapis.com/css?family=Caveat|Montserrat:400,600&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css?family=Caveat|Montserrat:400,600&display=swap" rel="stylesheet">
   <!-- CSS -->
   <link rel="stylesheet" href="css/styles.css">
 </head>
@@ -35,26 +35,22 @@
             href="http://christinatruong.com">christinatruong.com</a>.</p>
 
         <!-- Copy the whole <section> block to add more projects. -->
-        <section>
-          <h3>Project Name</h3>
+        <section class="project-item">
           <img src="images/face.jpg" alt="description of image">
+          <h3>Project Name</h3>
           <p>Summary or description of the project and/or your role in it. Add as many paragraphs as you need.</p>
           <a class="btn" href="#" target="_blank">View project / case study</a>
+        </section>
+        <!-- End of Project block. -->
+        <!-- Copy the whole <section> block to add more projects. -->
+        <section class="project-item">
+            <img src="images/face.jpg" alt="description of image">
+            <h3>Project Name</h3>
+            <p>Summary or description of the project and/or your role in it. Add as many paragraphs as you need.</p>
+            <a class="btn" href="#" target="_blank">View project / case study</a>
+        </section>
+        <!-- End of Project block. -->
       </div>
-    </section>
-
-    <!-- End of Project block. -->
-    <!-- Copy the whole <section> block to add more projects. -->
-    <section>
-      <div class="content-wrap">
-        <h3>Project Name</h3>
-        <img src="images/face.jpg" alt="description of image">
-        <p>Summary or description of the project and/or your role in it. Add as many paragraphs as you need.</p>
-        <a class="btn" href="#" target="_blank">View project / case study</a>
-
-    </section>
-    <!-- End of Project block. -->
-    </div>
     </section>
 
     <!-- ***********************  WORK EXPERIENCE  *********************** -->
@@ -64,18 +60,25 @@
         <p>Optional paragraph for work experience summary. Not a part of the job details. Delete if not being used.</p>
 
         <!-- Copy this whole <section> block to add more jobs. -->
-        <section>
-          <h3>Job title</h3>
-          <p>Company Name</p>
-          <p>Date at job</p>
-          <p>Job summary goes here. Add as many paragraphs as you need.</p>
-          <p>Optional list:</p>
-          <ul>
-            <li>Delete this list if you don't need it.</li>
-            <li>Created...</li>
-            <li>Lead...</li>
-            <li>Responsible for...</li>
-          </ul>
+        <section class="job-item">
+          <div class="job-details">
+            <h3>Vernon Seed Orchard Company</h3>
+            <p>Company Name</p>
+            <p>Date at job</p>
+          </div>
+
+          <div class="job-summary">
+            <p>Job summary goes here. Add as many paragraphs as you need. Job summary goes here. Add as many paragraphs as you need.
+              Job summary goes here. Add as many paragraphs as you need.
+            </p>
+            <p>Optional list:</p>
+            <ul>
+              <li>Delete this list if you don't need it.</li>
+              <li>Created...</li>
+              <li>Lead...</li>
+              <li>Responsible for...</li>
+            </ul>
+          </div>
 
         </section>
         <!-- End of Job block. -->
@@ -103,7 +106,7 @@
         <h2>Let's Keep in Touch!</h2>
 
         <!-- Social media and contact links. Add or remove any networks. -->
-        <ul>
+        <ul class="contact-list">
           <li><a href="mailto:email@example.com">email@example.com</a></li>
           <li><a href="http://yourwebsite.com" target="_blank">yourwebsite.com</a></li>
           <li><a href="#" target="_blank">Twitter</a></li>

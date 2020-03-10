@@ -32,6 +32,7 @@ img{
 
 a {
     color: #0cca4a;
+    text-decoration: none;
 }
 
 a:hover{
@@ -60,6 +61,7 @@ h1, h2 {
 header{
     background-color: #058c42;
     color: white;
+    text-align: center;
 }
 /* Projects
 ---------------------------------*/
@@ -79,18 +81,53 @@ header{
 .projects .btn:hover{
     background-color: rgba(12,202,74, 0.8);
 }
+
+.project-item {
+    overflow: hidden;
+    border-bottom: 1px dashed #122c34;
+    padding: 25px 0;
+}
+.project-item img {
+    float: left;
+    margin-right: 20px;
+}
+
+.project-item h3 {
+    margin-top: 0;
+}
 /* Experience
 ---------------------------------*/
-.education{
+.work-experience {
     background-color: #177e89;
     color: white;
 }
+.job-item {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 20px;
+}
+
 /* Education
 ---------------------------------*/
-
+.education{
+    background-color: white;
+    color: black;
+}
 /* Contact
 ---------------------------------*/
 footer {
-    background-color: 122c34;
+    background-color: #122c34;
+    color: white;
+    text-align: center;
+}
+.contact-list {
+    list-style: none;
+    padding: 0;  
+    display: flex;
+    justify-content: center;
+}
+.contact-list a {
+    display: inline-block;
+    padding: 15px;
     color: white;
 }
