@@ -50,12 +50,25 @@ h1, h2 {
     font-weight: 400;
     margin: 0;
 }
+
+.item-details h3 + p {
+    font-style: italic;
+}
+.item-details h3 ~ p {
+    margin: 0;
+}
 .content-wrap {
     width: 900px;
     margin: 0 auto;
     padding: 60px 0;
 }
-
+.divider > section{
+    border-bottom: 1px dashed #122c34;
+    padding: 25px 0;
+}
+.divider > section:last-of-type{
+    border-bottom-style: none;
+}
 /* About/Profile
 ---------------------------------*/
 header{
@@ -84,8 +97,7 @@ header{
 
 .project-item {
     overflow: hidden;
-    border-bottom: 1px dashed #122c34;
-    padding: 25px 0;
+
 }
 .project-item img {
     float: left;
