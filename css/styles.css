@@ -176,6 +176,11 @@ footer {
         grid-template-columns: 1fr 2fr;
         column-gap: 20px;
     }
+    .project-item{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 20px;
+    }
 }
 
 @media screen and (max-width: 679px){
@@ -186,6 +191,9 @@ footer {
     }
     h2 {
         line-height: 1;
+    }
+    .project-item img {
+        width: 100%;
     }
     .contact-list a{
         padding: 5px;
