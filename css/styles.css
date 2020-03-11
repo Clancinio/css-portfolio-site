@@ -31,7 +31,7 @@ img{
 }
 
 a {
-    color: #0cca4a;
+    color: #177e89;
     text-decoration: none;
 }
 
@@ -57,6 +57,10 @@ h1, h2 {
 .item-details h3 ~ p {
     margin: 0;
 }
+.item-details p:last-of-type{
+    margin-top: 15px;
+    width: 80%;
+}
 .content-wrap {
     max-width: 900px;
     width: 85%;
@@ -73,9 +77,14 @@ h1, h2 {
 /* About/Profile
 ---------------------------------*/
 header{
-    background-color: #058c42;
+    background-color: #177e89;
     color: white;
-    text-align: center;
+
+}
+header img {
+    max-width: 250px;
+    height: 250px;
+    border-radius: 50%;
 }
 /* Projects
 ---------------------------------*/
@@ -85,7 +94,7 @@ header{
 
 .projects .btn{
     color: white;
-    background-color: #0cca4a;
+    background-color: #177e89;
     text-decoration: none;
     padding: 8px;
     border-radius: 4px; 
@@ -93,16 +102,12 @@ header{
 }
 
 .projects .btn:hover{
-    background-color: rgba(12,202,74, 0.8);
+    background-color: rgba(23,126,137, 0.8);
 }
 
 .project-item {
     overflow: hidden;
 
-}
-.project-item img {
-    float: left;
-    margin-right: 20px;
 }
 
 .project-item h3 {
@@ -114,37 +119,75 @@ header{
     background-color: #177e89;
     color: white;
 }
-.job-item {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    column-gap: 20px;
-}
 
 /* Education
 ---------------------------------*/
-.education{
-    background-image: url("../images/leaves.jpg");
-    /*background-color: white;*/
-    /*color: black;*/
-    background-size: 400px 400px;
-    background-position: top right;
-    background-repeat: no-repeat;
-}
+
 /* Contact
 ---------------------------------*/
 footer {
     background-color: #122c34;
     color: white;
-    text-align: center;
+    
 }
 .contact-list {
     list-style: none;
     padding: 0;  
-    display: flex;
-    justify-content: center;
+
 }
 .contact-list a {
     display: inline-block;
     padding: 15px;
     color: white;
+}
+
+/* Responsice / Media Queries
+---------------------------------*/
+
+@media screen and (min-width: 680px){
+    header, footer {
+        text-align: center;
+    }
+    .education{
+        background-image: url("../images/leaves.jpg");
+        /*background-color: white;*/
+        /*color: black;*/
+        background-size: 400px 400px;
+        background-repeat: no-repeat;
+        background-position: bottom right;
+        background-position-x: 100%;
+        background-position-y: -150%;
+        
+    }
+    header {
+        height: 100vh;
+    }
+    .contact-list {
+        display: flex;
+        justify-content: center;
+    }
+    .project-item img {
+        float: left;
+        margin-right: 20px;
+    }
+
+    .job-item {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        column-gap: 20px;
+    }
+}
+
+@media screen and (max-width: 679px){
+    h1 {
+        font-size: 80px;
+        line-height: 0.9;
+        margin-bottom: 20px;
+    }
+    h2 {
+        line-height: 1;
+    }
+    .contact-list a{
+        padding: 5px;
+    }
 }
