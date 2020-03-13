@@ -101,6 +101,7 @@ header img {
     display: inline-block;
 }
 
+
 .projects .btn:hover{
     background-color: rgba(23,126,137, 0.8);
 }
@@ -113,6 +114,8 @@ header img {
 .project-item h3 {
     margin-top: 0;
 }
+
+
 /* Experience
 ---------------------------------*/
 .work-experience {
@@ -139,6 +142,89 @@ footer {
     display: inline-block;
     padding: 15px;
     color: white;
+}
+
+/* Contact Form Section
+---------------------------------*/
+.contact-section {
+    background-color: #1c2f31 ;
+    background-image: url(../images/background.jpg);
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contact-section h2{
+    color: white;
+}
+
+input:focus,
+textarea:focus,
+keygen:focus,
+select:focus {
+    outline: none;
+}
+
+form {
+    background-color: #177e89;
+    padding: 1.5rem;
+    text-align: left;
+    max-width: 400px;
+    border-radius: 5px;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: white;
+}
+
+input,
+textarea {
+    margin-bottom: 15px;
+    border: 1.5px lightgray solid;
+    border-radius: 5px;
+    padding: 10px;
+    font-family: inherit;
+    font-size: 0.75rem;
+}
+
+input:focus,
+textarea:focus {
+    border: 1.5px gray solid;
+}
+
+textarea[name="user_message"] {
+    height: 100px;
+}
+
+div[id="error"] {
+    color: red;
+}
+
+.button-group {
+    justify-content: start;
+}
+
+
+/***** Inline validation *****/
+input#fName:focus:valid,
+input#lName:focus:valid,
+input#mail:focus:valid,
+input#phone:focus:valid {
+    background: rgb(220, 255, 220);
+}
+
+input#fName:focus:invalid,
+input#lName:focus:invalid,
+input#mail:focus:invalid,
+input#phone:focus:invalid {
+    background: rgb(255, 232, 233);
 }
 
 /* Responsice / Media Queries
@@ -181,6 +267,10 @@ footer {
         grid-template-columns: 1fr 2fr;
         column-gap: 20px;
     }
+    .coming-soon{
+        text-align: center;
+        font-style: italic;
+    }
 }
 
 @media screen and (max-width: 679px){
@@ -194,6 +284,7 @@ footer {
     }
     .project-item img {
         width: 100%;
+        margin-bottom: 15px;
     }
     .contact-list a{
         padding: 5px;
