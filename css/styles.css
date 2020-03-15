@@ -77,7 +77,11 @@ h1, h2 {
 /* About/Profile
 ---------------------------------*/
 header{
-    background-color: #177e89;
+    background-color: #1c2f31 ;
+    background-image: url(../images/background.jpg);
+    background-blend-mode: overlay;
+    background-repeat: no-repeat;
+    background-size: cover;
     color: white;
 
 }
@@ -122,6 +126,9 @@ header img {
     background-color: #177e89;
     color: white;
 }
+.job-summary .margin-top{
+    margin-top: 10px;
+}
 
 /* Education
 ---------------------------------*/
@@ -146,6 +153,11 @@ footer {
 
 /* Contact Form Section
 ---------------------------------*/
+.contact-desc {
+    text-align: center;
+    color: white;
+}
+
 .contact-section {
     background-color: #1c2f31 ;
     background-image: url(../images/background.jpg);
@@ -171,6 +183,8 @@ form {
     text-align: left;
     max-width: 400px;
     border-radius: 5px;
+    margin-top: 15px;
+    margin: auto;
 }
 
 .form-row {
@@ -211,7 +225,18 @@ div[id="error"] {
     justify-content: start;
 }
 
+.submit-button{
+    background-color: white;
+    color: black;
+    font-family: inherit;
+    padding: 10px;
+    border-radius: 5px;
+}
 
+.submit-button:hover {
+    cursor: pointer;
+    background-color: ivory;
+}
 /***** Inline validation *****/
 input#fName:focus:valid,
 input#lName:focus:valid,
@@ -267,10 +292,23 @@ input#phone:focus:invalid {
         grid-template-columns: 1fr 2fr;
         column-gap: 20px;
     }
+
     .coming-soon{
         text-align: center;
         font-style: italic;
     }
+
+    /* .contact-section .item-details{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 20px;
+    } */
+
+    form {
+        margin-top: 20px;
+    }
+
+
 }
 
 @media screen and (max-width: 679px){
