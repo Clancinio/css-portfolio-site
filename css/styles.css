@@ -327,4 +327,10 @@ input#phone:focus:invalid {
     .contact-list a{
         padding: 5px;
     }
+    .contact-section .contact-desc h2{ 
+        margin-bottom: 15px;
+    }
+    form {
+        margin-top: 15px;
+    }
 }
