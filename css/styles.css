@@ -108,6 +108,7 @@ header img {
 
 .projects .btn:hover{
     background-color: rgba(23,126,137, 0.8);
+    cursor: pointer;
 }
 
 .project-item {
@@ -117,6 +118,27 @@ header img {
 
 .project-item h3 {
     margin-top: 0;
+}
+
+#drop-down1,
+#drop-down2 {
+    display: none;
+}
+
+.dropdown-wrapper {
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.left-col, .right-col {
+    display: flex;
+    width: 35%;
+    flex-direction: column;
+}
+
+.left-col h3, .right-col h3 {
+    text-align: center;
 }
 
 
@@ -287,7 +309,7 @@ input#phone:focus:invalid {
         grid-template-columns: 1fr 2fr;
         column-gap: 20px;
     }
-    .project-item{
+    .project-item-wrapper{
         display: grid;
         grid-template-columns: 1fr 2fr;
         column-gap: 20px;
@@ -323,6 +345,13 @@ input#phone:focus:invalid {
     .project-item img {
         width: 100%;
         margin-bottom: 15px;
+    }
+    .dropdown-wrapper {
+        flex-direction: column;
+    }
+    .left-col, .right-col {
+        width: 95%;  
+
     }
     .contact-list a{
         padding: 5px;

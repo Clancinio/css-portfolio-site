@@ -9,6 +9,8 @@
   <link href="https://fonts.googleapis.com/css?family=Caveat|Montserrat:400,600&display=swap" rel="stylesheet">
   <!-- CSS -->
   <link rel="stylesheet" href="css/styles.css">
+  <!-- JavaScript -->
+  <script src="js/script.js" defer></script>
 </head>
 
 <body>
@@ -20,12 +22,13 @@
         <h2>Student and Developer</h2>
 
         <p>Hello. Welcome to my website. My name is Dean and I am a second year Computing Science student at
-          Thompson Rivers University, Kamloops. I am passionate about technology and learning, I love to make websites, 
-          and I am always open to learning new technologies and skills. When I am not being a computer nerd, I like to get 
-          out in nature and hike, bike, and camp. 
+          Thompson Rivers University, Kamloops. I am passionate about technology and learning, I love to make websites,
+          and I am always open to learning new technologies and skills. When I am not being a computer nerd, I like to
+          get
+          out in nature and hike, bike, and camp.
         </p>
         <img src="images/profile.jpg" alt="">
-         
+
       </div>
     </header>
 
@@ -38,18 +41,57 @@
 
         <!-- Copy the whole <section> block to add more projects. -->
         <section class="project-item">
-          <img src="images/Bootstrap.jpg" alt="description of image">
-          <div class="project-details">
-            <h3>Bootstrap Apiaries</h3>
-            <p>This is a website that I made for my Web Design and Development class. I searched for businesses in Kamloops, BC that didnt't 
-              have a website and found Bootstrap Apiaries, a local honey business and developed a website for them.
-            </p>
+          <div class="project-item-wrapper">
+            <img src="images/covid_cover1.jpg" alt="description of image">
+            <div class="project-details">
+              <h3>COVID-19 Tracker App</h3>
+              <p> This Android App displays the total confirmed cases so far, the total deaths, and the total number of
+                people who have recovered.
+                The App also displays the number of cases for each country.
+              </p>
+
+              <!--<a class="btn" href="https://github.com/Clancinio/bootstrap-apiaries" target="_blank">View project on GitHub</a>-->
+              <a class="btn" onclick="dropDown('drop-down1')">More Info</a>
+            </div>
+          </div>
+          <div id="drop-down1">
+            <div class="dropdown-wrapper">
+              <div class="left-col">
+                <h3>Home Screen</h3>
+                <img src="images/screen1.jpg">
+                <p>The home screen displays total cases to date, total deaths, and the total numbre of people that have recovered.</p>
+              </div>
+              <div class="right-col">
+                <h3>Country Screen</h3>
+                <img src="images/screen2.jpg">
+                <p>The country screen shows a list of countries that have the virus and how many cases.</p>
+              </div>
+            </div>
             <a class="btn" href="https://github.com/Clancinio/bootstrap-apiaries" target="_blank">View project on GitHub</a>
-        </div>
+
+          </div>
         </section>
         <!-- End of Project block. -->
         <!-- Copy the whole <section> block to add more projects. -->
-        <h3 class="coming-soon">More projects are on the way...</h3>  
+        <!-- Copy the whole <section> block to add more projects. -->
+        <section class="project-item">
+          <img src="images/Bootstrap.jpg" alt="description of image">
+          <div class="project-details">
+            <h3>Bootstrap Apiaries</h3>
+            <p>This is a website that I made for my Web Design and Development class. I searched for businesses in
+              Kamloops, BC that didnt't
+              have a website and found Bootstrap Apiaries, a local honey business and developed a website for them.
+            </p>
+            <!--<a class="btn" href="https://github.com/Clancinio/bootstrap-apiaries" target="_blank">View project on GitHub</a>-->
+            <a class="btn" onclick="dropDown('drop-down2')">View project on GitHub</a>
+          </div>
+          <div id="drop-down2">
+            <p>This is a dropdown section</p>
+          </div>
+        </section>
+        <!-- End of Project block. -->
+        <!-- Copy the whole <section> block to add more projects. -->
+        <h3 class="coming-soon">More projects are on the way...</h3>
       </div>
     </section>
 
@@ -70,20 +112,21 @@
           </div>
 
           <div class="job-summary">
-            <p>My primary role as a Teaching Assistant is to be an assistant to the Web Design and Developement instructor.
+            <p>My primary role as a Teaching Assistant is to be an assistant to the Web Design and Developement
+              instructor.
             </p>
             <p>Roles/Responsibilities</p>
-            <ul>  
-              <li>Marking and Grading</li> 
+            <ul>
+              <li>Marking and Grading</li>
               <ul>
                 <li>Term Tests/Mid-term exams</li>
                 <li>Written Assignments/Lab Assignments</li>
                 <li>Final Exams</li>
-            </ul>
-            <li class="margin-top">Contact with supervisor</li>
-            <ul>
-              <li>Meetings/Email/Other Comunication</li>
-            </ul>
+              </ul>
+              <li class="margin-top">Contact with supervisor</li>
+              <ul>
+                <li>Meetings/Email/Other Comunication</li>
+              </ul>
             </ul>
           </div>
 
@@ -101,60 +144,62 @@
         <section>
           <h3>Thompson Rivers University - Kamloops</h3>
           <p>Computing Science Diploma, 2019 - Present</p>
-          <p>The diploma emphasizes the application of computers to the solution of business-related problems. The academic training combines technical and computer skills with communication skills (written and oral) and business skills. A commitment to professionalism is an essential characteristic of the diploma.</p>
+          <p>The diploma emphasizes the application of computers to the solution of business-related problems. The
+            academic training combines technical and computer skills with communication skills (written and oral) and
+            business skills. A commitment to professionalism is an essential characteristic of the diploma.</p>
         </section>
         <!-- End of School block. -->
       </div>
     </section>
 
-        <!-- ******************  CONTACT ****************** -->
-        <section class="contact-section">
-          <div class="content-wrap item-details">
-            
-            <div class="contact-desc">
-              <h2>Contact Me</h2>
-              Feel free to shoot me a message if you have any questions or would like to work with me.
-            </div>
-            
-            <form id="contact-form" action="" method="POST" data-netlify="true">
+    <!-- ******************  CONTACT ****************** -->
+    <section class="contact-section">
+      <div class="content-wrap item-details">
 
-              <div class="field-container">
-                  <!-- End col-left -->
-                  <div class="col-right">
-                      <div class="form-row">
-                          <label for="fName">First Name* :</label>
-                          <input type="text" id="fName" name="fName">
-                      </div>
-                      <div class="form-row">
-                          <label for="lName">Last Name*:</label>
-                          <input type="text" id="lName" name="lName">
-                      </div>
-                      <div class="form-row">
-                          <label for="mail">E-mail*:</label>
-                          <input type="email" id="mail" name="user_mail">
-                      </div>
-                      <div class="form-row">
-                          <label for="phone">Phone:</label>
-                          <input type="tel" id="phone" name="phone" pattern="^[0-9]*$">
-                      </div>
-  
-                      <div class="form-row">
-                          <label for="msg">Message*:</label>
-                          <textarea id="msg" name="user_message"></textarea>
-                      </div>
-                      <div id="error"></div>
-                      <div id="success"></div>
-                      <div class="button-group">
-                          <button class="submit-button" type="submit">Send Message</button>
-                      </div>
-                  </div>
+        <div class="contact-desc">
+          <h2>Contact Me</h2>
+          Feel free to shoot me a message if you have any questions or would like to work with me.
+        </div>
+
+        <form id="contact-form" action="" method="POST" data-netlify="true">
+
+          <div class="field-container">
+            <!-- End col-left -->
+            <div class="col-right">
+              <div class="form-row">
+                <label for="fName">First Name* :</label>
+                <input type="text" id="fName" name="fName">
               </div>
-          </form>
+              <div class="form-row">
+                <label for="lName">Last Name*:</label>
+                <input type="text" id="lName" name="lName">
+              </div>
+              <div class="form-row">
+                <label for="mail">E-mail*:</label>
+                <input type="email" id="mail" name="user_mail">
+              </div>
+              <div class="form-row">
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone" pattern="^[0-9]*$">
+              </div>
 
+              <div class="form-row">
+                <label for="msg">Message*:</label>
+                <textarea id="msg" name="user_message"></textarea>
+              </div>
+              <div id="error"></div>
+              <div id="success"></div>
+              <div class="button-group">
+                <button class="submit-button" type="submit">Send Message</button>
+              </div>
+            </div>
           </div>
+        </form>
+
+      </div>
 
 
-        </section>
+    </section>
 
     <!-- *****************  CONTACT INFO / SOCIAL MEDIA  ***************** -->
     <footer>
