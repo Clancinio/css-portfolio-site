@@ -34,6 +34,7 @@ li{
 body {
     background-color: var(--primary);
     overflow-x: hidden; /* When image overflow off the screen, user can't scroll */
+    font-family: 'Rubic Regular';
 }
 
 input, textarea{
@@ -43,8 +44,33 @@ input, textarea{
     border: 2px solid #214161;
     color: #f2f2f2;
 }
-/* fonts */
 
+/* fonts */
+@font-face{
+    font-family: 'Rubic Regular';
+    src: url('assets/fonts/Rubik-VariableFont_wght.ttf');
+}
+
+h1, h2, h3, h4{
+    color: #DDDBFF;
+    font-weight: normal;
+}
+
+h1, h3 {
+    font-size: 1.2em;
+}
+
+h2 {
+    font-size: 1.6em;
+}
+
+h4, .leading{
+    font-size: 1.1em;
+}
+
+p, a, li {
+    color: #DDDBFF;
+}
 
 /* mobile styles */
 
@@ -55,10 +81,14 @@ input, textarea{
 
 /* large tablets and laptop styles */
 @media screen and (min-width: 960px){
-    
+    body{
+        font-size: 18px;
+    }
 }
 
 /* large tablets and laptop styles */
 @media screen and (min-width: 1200px){
-    
+    body{
+        font-size: 20px;
+    }
 }
