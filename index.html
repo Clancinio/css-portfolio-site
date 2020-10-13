@@ -1,247 +1,81 @@
-<!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dean Clancy - Portfolio</title>
-  <!-- Google Fonts-->
-  <link href="https://fonts.googleapis.com/css?family=Caveat|Montserrat:400,600&display=swap" rel="stylesheet">
-  <!-- CSS -->
-  <link rel="stylesheet" href="css/styles.css">
-  <!-- JavaScript -->
-  <script src="js/script.js" defer></script>
+  <link type="stylesheet" href="styles.css">
+  <title>Dean Clancy</title>
 </head>
-
 <body>
-  <main>
-    <!-- ***********************  ABOUT / PROFILE  *********************** -->
-    <header>
-      <div class="content-wrap">
-        <h1>Dean Clancy</h1>
-        <h2>Student and Developer</h2>
 
-        <p>Hello. Welcome to my website. My name is Dean and I am a second year Computing Science student at
-          Thompson Rivers University, Kamloops. I am passionate about technology and learning, I love to make websites,
-          and I am always open to learning new technologies and skills. When I am not being a computer nerd, I like to
-          get
-          out in nature and hike, bike, and camp.
-        </p>
-        <img src="images/profile.jpg" alt="">
+  <nav class="site-nav grid">
+    <h1>Dean Clancy</h1>
+    <ul>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul> 
+  </nav> <!-- End site-nav-->
 
-      </div>
-    </header>
+  <section id="welcome" class="grid">
+    <div class="welcome-text">
+      <h2>Web Designer <br />& Java Developer</h2>
+      <p class="leading">Hello. Welcome to my website. My name is Dean and I am a second year Computing Science student at Thompson Rivers University, Kamloops. I am passionate about technology and learning, I love to make websites, and I am always open to learning new technologies and skills. When I am not being a computer nerd, I like to get out in nature and hike, bike, and camp</p>
+      <a href="#portfolio" class="button">View my work</a>
+    </div>
+    <div id="welcome-image">
+      <img src="assets/profile.jpg" alt="profile image">
+    </div>
+  </section> <!-- End welcome section-->
 
-    <!-- ********************  PROJECTS / PORTFOLIO  ********************* -->
-    <section class="projects">
-      <div class="content-wrap divider">
-        <h2>Featured Projects</h2>
-        <p>View selected projects below. Check out more project I am working on at <a class="btn"
-            href="https://github.com/Clancinio" target="_blank">GitHub</a>.</p>
+  <section id="portfolio">
+    <h3>Some of my Projects</h3>
+    <div class="grid projects">
+      <a href="#">
+        <img src="https://picsum.photos/id/237/200/300" alt="">
+        <h4>Project One</h4>
+      </a>
+      <a href="#">
+        <img src="https://picsum.photos/id/237/200/300" alt="">
+        <h4>Project Two</h4>
+      </a>
+      <a href="#">
+        <img src="https://picsum.photos/id/237/200/300" alt="">
+        <h4>Project Three</h4>
+      </a>
+    </div>
+  </section>
 
-        <!-- Copy the whole <section> block to add more projects. -->
-        <section class="project-item">
-          <div class="project-item-wrapper">
-            <img src="images/covid_cover1.jpg" alt="description of image">
-            <div class="project-details">
-              <h3>COVID-19 Tracker App</h3>
-              <p> This Android App displays the total confirmed cases so far, the total deaths, and the total number of
-                people who have recovered.
-                The App also displays the number of cases for each country.
-              </p>
+  <section id="skills">
+    <h3>Things I can do</h3>
+    <ul class="grid">
+      <li><img src="https://picsum.photos/id/236/200/200" ></li>
+      <li><img src="https://picsum.photos/id/235/200/200" ></li>
+      <li><img src="https://picsum.photos/id/234/200/200" ></li>
+      <li><img src="https://picsum.photos/id/232/200/200" ></li>
+    </ul>
+  </section>
 
-              <!--<a class="btn" href="https://github.com/Clancinio/bootstrap-apiaries" target="_blank">View project on GitHub</a>-->
-              <a class="btn" onclick="dropDown('drop-down1')">More Info</a>
-            </div>
-          </div>
-          <div id="drop-down1">
-            <div class="dropdown-wrapper">
-              <div class="left-col">
-                <h3>Home Screen</h3>
-                <img src="images/screen1.jpg">
-                <p>The home screen displays total cases to date, total deaths, and the total numbre of people that have recovered.</p>
-              </div>
-              <div class="right-col">
-                <h3>Country Screen</h3>
-                <img src="images/screen2.jpg">
-                <p>The country screen shows a list of countries that have the virus and how many cases.</p>
-              </div>
-            </div>
-            <a class="btn" href="https://github.com/Clancinio/bootstrap-apiaries" target="_blank">View project on GitHub</a>
+  <section id="contact">
+    <h3>Get in Touch</h3>
+    <p class="leading">Shoot me a message if you have any questions</p>
+    <form action="">
+      <input type="text" placeholder="Name">
+      <input type="email" placeholder="Email">
+      <textarea placeholder="Your Message"></textarea>
+      <button class="button">Send</button>
+    </form>
+  </section>
 
-          </div>
-        </section>
-        <!-- End of Project block. -->
-        <!-- Copy the whole <section> block to add more projects. -->
-        <!-- Copy the whole <section> block to add more projects. -->
-        <section class="project-item">
-          <img src="images/Bootstrap.jpg" alt="description of image">
-          <div class="project-details">
-            <h3>Bootstrap Apiaries</h3>
-            <p>This is a website that I made for my Web Design and Development class. I searched for businesses in
-              Kamloops, BC that didnt't
-              have a website and found Bootstrap Apiaries, a local honey business and developed a website for them.
-            </p>
-            <!--<a class="btn" href="https://github.com/Clancinio/bootstrap-apiaries" target="_blank">View project on GitHub</a>-->
-            <a class="btn" onclick="dropDown('drop-down2')">View project on GitHub</a>
-          </div>
-          <div id="drop-down2">
-            <p>This is a dropdown section</p>
-          </div>
-        </section>
-        <!-- End of Project block. -->
-        <!-- Copy the whole <section> block to add more projects. -->
-        <h3 class="coming-soon">More projects are on the way...</h3>
-      </div>
-    </section>
+  <footer>
+    <div class="grid">
+      <p class="copyright">Copyright 2020 Dean Clancy Dev</p>
+      <ul class="social">
+        <li><a href=""><img src="assets/icon_linkedin.svg" alt=""></a></li>
+        <li><a href=""><img src="assets/icon_git.svg" alt=""></a></li>
 
-    <!-- ***********************  WORK EXPERIENCE  *********************** -->
-    <section class="work-experience">
-      <div class="content-wrap item-details divider">
-        <h2>Work Experience</h2>
-        <!--
-        <p>Optional paragraph for work experience summary. Not a part of the job details. Delete if not being used.</p>
-        -->
+      </ul>
+    </div>
+  </footer>
 
-		        <!-- Copy this whole <section> block to add more jobs. -->
-        <section class="job-item">
-          <div class="job-details">
-            <h3>Technology Services Analyst</h3>
-            <p>BC Wildfire Service</p>
-            <p>May 2020 - Present</p>
-          </div>
-
-          <div class="job-summary">
-            <p>My primary role as a Teaching Assistant is to be an assistant to the Web Design and Developement
-              instructor.
-            </p>
-            <p>Roles/Responsibilities</p>
-            <ul>
-              <li>Supporting the BC Wildfire operations Southeast Centre located in Castlegar, plus all deployments from this site.</li>
-				<li>Providing tech support for both off the shelf technologies (e.g. Microsoft) and custom applications.</li>
-            	<li>Be responsive to needs of users in-house and on deployment.</li>
-				<li>Ensure problems are solved or escalated to higher levels.</li>
-				<li>Sample support issues: Build and deploy laptops. Troubleshoot printers. Resolve file access issues. Test and install new software applications. Write scripts to ensure efficient and accurate computer builds.</li>
-			</ul>
-          </div>
-
-        </section>
-        <!-- End of Job block. -->
-        <!-- Copy this whole <section> block to add more jobs. -->
-        <section class="job-item">
-          <div class="job-details">
-            <h3>Teaching Assistant</h3>
-            <p>Thompson Rivers University</p>
-            <p>Jan 2020 - May 2020</p>
-          </div>
-
-          <div class="job-summary">
-            <p>My primary role as a Teaching Assistant is to be an assistant to the Web Design and Developement
-              instructor.
-            </p>
-            <p>Roles/Responsibilities</p>
-            <ul>
-              <li>Marking and Grading</li>
-              <ul>
-                <li>Term Tests/Mid-term exams</li>
-                <li>Written Assignments/Lab Assignments</li>
-                <li>Final Exams</li>
-              </ul>
-              <li class="margin-top">Contact with supervisor</li>
-              <ul>
-                <li>Meetings/Email/Other Comunication</li>
-              </ul>
-            </ul>
-          </div>
-
-        </section>
-        <!-- End of Job block. -->
-		
-
-      </div>
-    </section>
-
-    <!-- ******************  EDUCATION & CERTIFICATIONS ****************** -->
-    <section class="education">
-      <div class="content-wrap item-details">
-        <h2>Education</h2>
-
-        <!-- Copy this whole <section> block to add more schools. -->
-        <section>
-          <h3>Thompson Rivers University - Kamloops</h3>
-          <p>Computing Science Diploma, 2019 - Present</p>
-          <p>The diploma emphasizes the application of computers to the solution of business-related problems. The
-            academic training combines technical and computer skills with communication skills (written and oral) and
-            business skills. A commitment to professionalism is an essential characteristic of the diploma.</p>
-        </section>
-        <!-- End of School block. -->
-      </div>
-    </section>
-
-    <!-- ******************  CONTACT ****************** -->
-    <section class="contact-section">
-      <div class="content-wrap item-details">
-
-        <div class="contact-desc">
-          <h2>Contact Me</h2>
-          Feel free to shoot me a message if you have any questions or would like to work with me.
-        </div>
-
-        <form id="contact-form" action="" method="POST" data-netlify="true">
-
-          <div class="field-container">
-            <!-- End col-left -->
-            <div class="col-right">
-              <div class="form-row">
-                <label for="fName">First Name* :</label>
-                <input type="text" id="fName" name="fName">
-              </div>
-              <div class="form-row">
-                <label for="lName">Last Name*:</label>
-                <input type="text" id="lName" name="lName">
-              </div>
-              <div class="form-row">
-                <label for="mail">E-mail*:</label>
-                <input type="email" id="mail" name="user_mail">
-              </div>
-              <div class="form-row">
-                <label for="phone">Phone:</label>
-                <input type="tel" id="phone" name="phone" pattern="^[0-9]*$">
-              </div>
-
-              <div class="form-row">
-                <label for="msg">Message*:</label>
-                <textarea id="msg" name="user_message"></textarea>
-              </div>
-              <div id="error"></div>
-              <div id="success"></div>
-              <div class="button-group">
-                <button class="submit-button" type="submit">Send Message</button>
-              </div>
-            </div>
-          </div>
-        </form>
-
-      </div>
-
-
-    </section>
-
-    <!-- *****************  CONTACT INFO / SOCIAL MEDIA  ***************** -->
-    <footer>
-      <div class="content-wrap">
-        <h2>Let's Keep in Touch!</h2>
-
-        <!-- Social media and contact links. Add or remove any networks. -->
-        <ul class="contact-list">
-          <!--<li><a href="http://yourwebsite.com" target="_blank">yourwebsite.com</a></li>-->
-          <li><a href="https://github.com/Clancinio" target="_blank">GitHub</a></li>
-          <li><a href="https://www.linkedin.com/in/deanclancy91/" target="_blank">LinkedIn</a></li>
-          <!--<li><a href="#" target="_blank">Facebook</a></li>-->
-        </ul>
-      </div>
-    </footer>
-  </main>
 </body>
-
 </html>
