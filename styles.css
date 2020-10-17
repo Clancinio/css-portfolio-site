@@ -148,9 +148,17 @@ p, a, li {
     margin: 40px 0;
 }
 #skills li{
-    padding: 10px;
+    padding: 20px;
     grid-column: span 4;
     text-align: center;
+}
+.img-container{
+    margin: 0 auto;
+    height: 100px;
+    width: 100px;
+    padding: 10px;
+    border-radius: 100%;
+    background-color: white;
 }
 #skills img{
     height: 80px;
