@@ -29,12 +29,12 @@
     <div class="welcome-image">
       <img src="assets/dean_new.jpg" alt="profile image">
     </div>
-    <p class="leading">Hello. Welcome to my website. My name is Dean and I am a second-year Computing Science student at Thompson Rivers University, Kamloops. I am passionate about technology and learning, I love to make websites, and I am always open to learning new technologies and skills. I am currently working as a Software Developer Co-op at <a href="https://xombo.com/" target="_blank">XOMBO</a> When I am not being a computer nerd, I like to get out in nature, hike, bike, and go camping.</p>
+    <p class="leading">Hello. Welcome to my website. My name is Dean and I am a second-year Computing Science student at Thompson Rivers University, Kamloops. I am passionate about technology and learning, I love to make websites, and I am always open to learning new technologies and skills. When I am not being a computer nerd, I like to get out in nature, hike, bike, and go camping.</p>
   </section>
 
   <section id="portfolio">
     <h3>Some of my Projects</h3>
-    <!-- <div class="grid projects">
+  <div class="grid projects">
       <a href="#">
         <img src="https://picsum.photos/id/237/150" alt="">
         <h4>Project One</h4>
@@ -47,10 +47,9 @@
         <img src="https://picsum.photos/id/237/150" alt="">
         <h4>Project Three</h4>
       </a>
-    </div> -->
-    <h2>Coming Soon.</h2>
-    <p>In the meantime, please check out my <a href="https://github.com/Clancinio">GitHub.</a></p>
-  </section>
+    </div> 
+
+</section>
 
   <section id="skills">
     <h3>Things I can do</h3>
@@ -85,5 +84,25 @@
   </footer>
   <!-- Scripts -->
   <script src="smoothScroll.js"></script>
+  <script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
+
+    // Get the <span> element that closes the modal
+    // var span = document.getElementsByClassName("close")[0];
+    var span = document.getElementsByClassName("skip")[0];
+    // When the user clicks the button, open the modal
+    btn.onclick = function () {
+      modal.style.display = "block";
+    };
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+      modal.style.display = "none";
+    };
+  </script>
 </body>
 </html>
