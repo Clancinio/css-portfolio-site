@@ -56,6 +56,10 @@ textarea {
   src: url("assets/fonts/Rubik-VariableFont_wght.ttf");
 }
 
+p {
+  margin-bottom: 30px;;
+}
+
 h1,
 h2,
 h3,
@@ -165,10 +169,18 @@ body nav a:hover {
   padding-bottom: 20px;
   padding-bottom: 15px;
 }
-#about h3 {
+#about h3,
+#portfolio h3 {
   color: var(--primary);
   font-size: 1.6rem;
   font-weight: bold;
+}
+#about .about-wrapper {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  width: 60%;
+  margin: 0 auto;
+  padding-top: 1rem;
+  margin-top: 40px;
 }
 #about .leading {
   max-width: 750px;
@@ -178,8 +190,10 @@ body nav a:hover {
   padding-top: 40px;
   padding-bottom: 50px;
   line-height: 1.3;
+  text-align: left;
 }
-#about p {
+#about p,
+#portfolio p {
   color: #636363;
 }
 #about p a {
@@ -195,11 +209,12 @@ body nav a:hover {
     background-repeat: no-repeat;
     background-position: bottom; */
   padding: 30px 20px;
-  background-color: #325294;
+  background-color: var(--primary);
   text-align: center;
 }
 #portfolio {
   padding-bottom: 70px;
+  background-color: white;
 }
 #portfolio h3,
 #about {
@@ -211,19 +226,51 @@ body nav a:hover {
 #portfolio a:hover {
   border-bottom: 2px solid var(--secondary);
 }
-.projects a {
-  grid-column: 1/9;
-  margin: 20px 0;
+.projects {
+  width: 100%;
+  padding: 40px 20px;
+  max-width: 80%;
+  margin: 0 auto;
+  margin-top: 30px;
+  /* border: solid 2px var(--primary); */
+  border-radius: 5px;
+}
+.project {
   display: flex;
+  padding: 2rem 1rem;
+  justify-content: space-around;
+  align-items: center;
+  background: white;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
 }
-.projects a * {
-  margin: 0 20px;
-  max-width: 40%;
-  align-self: center;
+.project h4 {
+  color: var(--primary);
+  padding-bottom: 30px;
+  font-weight: bold;
 }
-#portfolio img {
-  border-radius: 100%;
+.project-description {
+  width: 45%;
+  text-align: left;
+  object-fit: cover;
 }
+.project-description span{
+  color: var(--primary);
+  font-weight: bold;
+}
+.project-description span:hover{
+  cursor: pointer;
+  border-bottom: 3px solid var(--secondary);
+}
+.project-image {
+  width: 45%;
+  object-fit: cover;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+.project-image img{
+  width: 100%;
+  border-radius: 10px;
+}
+
 #portfolio h2 {
   font-size: 2em;
 }
@@ -235,11 +282,13 @@ body nav a:hover {
   text-align: center;
 }
 #skills ul {
+  display: flex;
+  justify-content: space-around;
   margin: 40px 0;
+  width: 80%;
 }
 #skills li {
   padding: 20px;
-  grid-column: span 4;
   text-align: center;
 }
 .img-container {
@@ -324,21 +373,8 @@ footer .social img {
   #portfolio h2 {
     font-size: 2.3em;
   }
-  .projects a {
-    grid-column: span 4;
-    display: block;
-    text-align: center;
-  }
-  .projects a:last-child {
-    grid-column: 3/7;
-  }
   .projects h4 {
     margin: 10px auto 0 auto;
-  }
-  .projects a * {
-    margin: 10px;
-    max-width: 60%;
-    margin: 10px 20%;
   }
   #skills {
     padding: 30px 100px;
