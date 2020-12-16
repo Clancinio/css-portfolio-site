@@ -1,109 +1,710 @@
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles.css">
-  <title>Dean Clancy</title>
-</head>
-<body>
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js oldie ie8" lang="en"> <![endif]-->
+<!--[if IE 9]><html class="no-js oldie ie9" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!-->
+<html class="no-js" lang="en">
+  <!--<![endif]-->
+  <head>
+    <!--- basic page needs
+   ================================================== -->
+    <meta charset="utf-8" />
+    <title>Dean Clancy Dev</title>
+    <meta name="description" content="" />
+    <meta name="author" content="" />
 
-  <nav class="site-nav grid">
-    <h1>Dean Clancy</h1>
-    <ul>
-      <li><a onclick="smoothScrollTo('portfolio');">Portfolio</a></li>
-      <li><a onclick="smoothScrollTo('skills');">Skills</a></li>
-      <li><a onclick="smoothScrollTo('contact');">Contact</a></li>
-    </ul> 
-  </nav> <!-- End site-nav-->
+    <!-- mobile specific metas
+   ================================================== -->
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1"
+    />
 
-  <section id="welcome" class="grid">
-    <div class="welcome-text">
-      <h2>Hello.<br> I'm <strong><span>Dean.</strong></span> A Web Designer <br />& Java Developer</h2>   
-      <p><a onclick="smoothScrollTo('about');">About Me</a></p>   
-    </div>
+    <!-- CSS
+   ================================================== -->
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/vendor.css" />
 
-  </section> <!-- End welcome section-->
+    <!-- script
+   ================================================== -->
+    <script src="js/modernizr.js"></script>
+    <script src="js/pace.min.js"></script>
 
-  <section id="about">
-    <h3>About Me</h3>
-    <div class="about-wrapper">
-      <div class="welcome-image">
-        <img src="assets/dean_new.jpg" alt="profile image">
+    <!-- favicons
+	================================================== -->
+    <link rel="icon" type="image/png" href="favicon.png" />
+  </head>
+
+  <body id="top">
+    <!-- header 
+   ================================================== -->
+    <header>
+      <div class="row">
+        <div class="top-bar">
+          <a class="menu-toggle" href="#"><span>Menu</span></a>
+
+          <div class="logo">
+            <a href="index.html">DEAN</a>
+          </div>
+
+          <nav id="main-nav-wrap">
+            <ul class="main-navigation">
+              <li class="current">
+                <a class="smoothscroll" href="#intro" title="">Home</a>
+              </li>
+              <li><a class="smoothscroll" href="#about" title="">About</a></li>
+              <li>
+                <a class="smoothscroll" href="#resume" title="">Resume</a>
+              </li>
+              <li>
+                <a class="smoothscroll" href="#portfolio" title="">Portfolio</a>
+              </li>
+              <li>
+                <a class="smoothscroll" href="#contact" title="">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <!-- /top-bar -->
       </div>
-      <p class="leading">Hello. Welcome to my website. My name is Dean and I am a second-year Computing Science student at Thompson Rivers University, Kamloops. I am passionate about technology and learning, I love to make websites, and I am always open to learning new technologies and skills. When I am not being a computer nerd, I like to get out in nature, hike, bike, and go camping.</p>
-    </div>
-  </section>
+      <!-- /row -->
+    </header>
+    <!-- /header -->
 
-  <section id="portfolio">
-    <h3>Some of my Projects</h3>
-    <div class="projects">
-      <div class="project">
-      <div class="project-description">
-        <h4>GameBase - React Web App</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati, placeat at itaque quas voluptatibus corporis quae repellendus non ab quos odit accusantium deserunt, possimus consequuntur, similique maiores assumenda odio culpa!</p>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius excepturi pariatur numquam qui iste dolore vel ratione nostrum, veniam perferendis?</p>
-        <p><span class="view-project">GitHub</span></p>
+    <!-- intro section
+   ================================================== -->
+    <section id="intro">
+      <div class="intro-overlay"></div>
+
+      <div class="intro-content">
+        <div class="row">
+          <div class="col-twelve">
+            <h5>Hello.</h5>
+            <h1>I'm Dean Clancy.</h1>
+
+            <p class="intro-position">
+              <span>React Developer</span>
+            </p>
+
+            <a class="button stroke smoothscroll" href="#about" title=""
+              >More About Me</a
+            >
+          </div>
+        </div>
       </div>
-      <div class="project-image">
-        <img src="assets/img/gamebase.png" alt="">
-      </div>
-    </div>
-    </div> 
-</section>
+      <!-- /intro-content -->
 
-  <section id="skills">
-    <h3>Things I can do</h3>
-    <ul>
-      <li><div class="img-container"><img src="/assets/html-5.svg" ></div></li>
-      <li><div class="img-container"><img src="/assets/css-5.svg" ></div></li>
-      <li><div class="img-container"><img src="assets/javascript-4.svg" ></div></li>
-      <li><div class="img-container"><img src="assets/java-4.svg" ></div></li>
-      <li><div class="img-container"><img src="assets/img/reactlogo.png" ></div></li>
-    </ul>
-  </section>
-
-  <section id="contact">
-    <h3>Get in Touch</h3>
-    <p class="leading">Shoot me a message if you have any questions</p>
-    <form name="contact-form" action="POST" Content-Type="application/x-www-form-urlencoded" data-netlify="true">
-      <input  type="text" name="name" placeholder="Name">
-      <input type="email" name="email" placeholder="Email">
-      <textarea name="message" placeholder="Your Message"></textarea>
-      <button class="button">Send</button>
-    </form>
-  </section>
-
-  <footer>
-    <div class="grid">
-      <p class="copyright">Copyright 2020 Dean Clancy Dev</p>
-      <ul class="social">
-        <li><a href="https://www.linkedin.com/in/deanclancy91/"><img src="assets/linkedin.svg" alt=""></a></li>
-        <li><a href="https://github.com/Clancinio"><img src="assets/github.svg" alt=""></a></li>
-
+      <ul class="intro-social">
+				<li>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa fa-github"></i></a>
+        </li>
+        <li>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+        </li>
       </ul>
+      <!-- /intro-social -->
+    </section>
+    <!-- /intro -->
+
+    <!-- about section
+   ================================================== -->
+    <section id="about">
+      <div class="row section-intro">
+        <div class="col-twelve">
+          <h5>About</h5>
+          <h1>Let me introduce myself.</h1>
+
+          <div class="intro-info">
+            <img src="images/profile-pic.jpg" alt="Profile Picture" />
+
+            <p class="lead">
+							Hello. Welcome to my website. My name is Dean and I am a second-year Computing Science student at Thompson Rivers University, Kamloops. I am passionate about technology and learning, I love to make websites, and I am always open to learning new technologies and skills. I am currently working as a Software Developer Co-op at XOMBO When I am not being a computer nerd, I like to get out in nature, hike, bike, and go camping.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- /section-intro -->
+
+      <!-- <div class="row about-content">
+        <div class="col-six tab-full">
+          <h3>Profile</h3>
+          <p>
+            Lorem ipsum Qui veniam ut consequat ex ullamco nulla in non ut esse
+            in magna sint minim officia consectetur nisi commodo ea magna
+            pariatur nisi cillum.
+          </p>
+
+          <ul class="info-list">
+            <li>
+              <strong>Fullname:</strong>
+              <span>Juan Dela Cruz</span>
+            </li>
+            <li>
+              <strong>Birth Date:</strong>
+              <span>September 28, 1987</span>
+            </li>
+            <li>
+              <strong>Job:</strong>
+              <span>Freelancer, Frontend Developer</span>
+            </li>
+            <li>
+              <strong>Website:</strong>
+              <span>www.kardswebsite.com</span>
+            </li>
+            <li>
+              <strong>Email:</strong>
+              <span>me@kardswebsite.com</span>
+            </li>
+          </ul>
+        
+        </div>
+
+        <div class="col-six tab-full">
+          <h3>Skills</h3>
+          <p>
+            Lorem ipsum Qui veniam ut consequat ex ullamco nulla in non ut esse
+            in magna sint minim officia consectetur nisi commodo ea magna
+            pariatur nisi cillum.
+          </p>
+
+          <ul class="skill-bars">
+            <li>
+              <div class="progress percent90"><span>90%</span></div>
+              <strong>HTML5</strong>
+            </li>
+            <li>
+              <div class="progress percent85"><span>85%</span></div>
+              <strong>CSS3</strong>
+            </li>
+            <li>
+              <div class="progress percent70"><span>70%</span></div>
+              <strong>JQuery</strong>
+            </li>
+            <li>
+              <div class="progress percent95"><span>95%</span></div>
+              <strong>PHP</strong>
+            </li>
+            <li>
+              <div class="progress percent75"><span>75%</span></div>
+              <strong>Wordpress</strong>
+            </li>
+          </ul>
+          <!-- /skill-bars -->
+        </div>
+      </div> -->
+
+      <div class="row button-section">
+        <div class="col-twelve">
+          <a href="#contact" title="Hire Me" class="button stroke smoothscroll"
+            >Get in touch</a
+          >
+          <a href="#" title="Download CV" class="button button-primary"
+            >Download Resume</a
+          >
+        </div>
+      </div>
+    </section>
+    <!-- /process-->
+
+    <!-- resume Section
+   ================================================== -->
+    <section id="resume" class="grey-section">
+      <div class="row section-intro">
+        <div class="col-twelve">
+          <h5>Resume</h5>
+          <h1>More of my credentials.</h1>
+
+          <p class="lead">
+            Below is a list of my work experience and education.
+          </p>
+        </div>
+      </div>
+      <!-- /section-intro-->
+
+      <div class="row resume-timeline">
+        <div class="col-twelve resume-header">
+          <h2>Work Experience</h2>
+        </div>
+        <!-- /resume-header -->
+
+        <div class="col-twelve">
+          <div class="timeline-wrap">
+            <div class="timeline-block">
+              <div class="timeline-ico">
+                <i class="fa fa fa-briefcase"></i>
+              </div>
+
+              <div class="timeline-header">
+                <h3>Software Developer</h3>
+                <p>Spetmber 2020 - December 2020</p>
+              </div>
+
+              <div class="timeline-content">
+                <h4>XOMBO</h4>
+								<ul>
+									<li>XOMBO helps personal trainers monitor their clients through the apps they already use, like Fitbit, GoogleFit, and Instagram.</li>
+									<li>Fixed bugs from the existing website and implemented enhancements that significantly improved user experience e.g. made the site look good on all device sizes</li>
+						 			<li>Maintaining an understanding of the latest Web applications and programming practices through research, study, and communication with team members.</li>
+									<li>Evaluating code to ensure it meets industry standards, is valid, is properly structured, and is compatible with browsers, devices, or operating systems.</li>
+								</ul>
+              </div>
+            </div>
+            <!-- /timeline-block -->
+
+            <div class="timeline-block">
+              <div class="timeline-ico">
+                <i class="fa fa fa-briefcase"></i>
+              </div>
+
+              <div class="timeline-header">
+                <h3>Technology Services Analyst</h3>
+                <p>May 2020 - September 2020</p>
+              </div>
+
+              <div class="timeline-content">
+                <h4>BC Wildfire Service</h4>
+               <ul>
+								 <li>Supporting the BC Wildfire operations Southeast Centre located in Castlegar, plus all deployments from this site</li>
+								 <li>Providing tech support for both off the shelf technologies (e.g. Microsoft) and custom applications</li>
+								 <li>Ensure problems are solved or escalated to higher levels.</li>
+						  	 <li>Sample support issues:  Build and deploy laptops.  Troubleshoot printers.  Resolve file access issues.  Test and install new software applications.  Write scripts to ensure efficient and accurate computer builds</li>
+								</ul>
+              </div>
+            </div>
+            <!-- /timeline-block -->
+
+            <div class="timeline-block">
+              <div class="timeline-ico">
+                <i class="fa fa-briefcase"></i>
+              </div>
+
+              <div class="timeline-header">
+                <h3>Teaching Assistant</h3>
+                <p>January 2020 - May 2020</p>
+              </div>
+
+              <div class="timeline-content">
+                <h4>Thompson Rivers University</h4>
+                <ul>
+									<li>Assisting students with the Web Design lab and answering any questions the students may have.</li>
+									<li>Marking assignments and tests every week and giving constructive feedback</li>
+								</ul>
+              </div>
+            </div>
+            <!-- /timeline-block -->
+          </div>
+          <!-- /timeline-wrap -->
+        </div>
+        <!-- /col-twelve -->
+      </div>
+      <!-- /resume-timeline -->
+
+      <div class="row resume-timeline">
+        <div class="col-twelve resume-header">
+          <h2>Education</h2>
+        </div>
+        <!-- /resume-header -->
+
+        <div class="col-twelve">
+          <div class="timeline-wrap">
+            <div class="timeline-block">
+              <div class="timeline-ico">
+                <i class="fa fa-graduation-cap"></i>
+              </div>
+
+              <div class="timeline-header">
+                <h3>Computing Science Diploma</h3>
+                <p>JMay 2019 - Present</p>
+              </div>
+
+              <div class="timeline-content">
+                <h4>Thompson Rivers University</h4>
+                <p>
+                  The diploma emphasizes the application of computers to the solution of business-related problems. The academic training combines technical and computer skills with communication skills (written and oral) and business skills. A commitment to professionalism is an essential characteristic of the diploma.
+                </p>
+              </div>
+            </div>
+            <!-- /timeline-block -->
+          </div>
+          <!-- /timeline-wrap -->
+        </div>
+        <!-- /col-twelve -->
+      </div>
+      <!-- /resume-timeline -->
+    </section>
+    <!-- /features -->
+
+    <!-- Portfolio Section
+   ================================================== -->
+    <section id="portfolio">
+      <div class="row section-intro">
+        <div class="col-twelve">
+          <h5>Portfolio</h5>
+          <h1>Check Out Some of My Works.</h1>
+
+          <p class="lead">
+            Some projects I have worked on. More coming soon.
+          </p> 
+        </div>
+      </div>
+      <!-- /section-intro-->
+
+      <div class="row portfolio-content">
+        <div class="col-twelve">
+          <!-- portfolio-wrapper -->
+          <div id="folio-wrapper" class="block-1-2 block-mob-full stack">
+            <div class="bgrid folio-item">
+              <div class="item-wrap">
+                <img src="images/portfolio/gamebase_screen.png" alt="Game Base" />
+                <a href="#modal-01" class="overlay">
+                  <div class="folio-item-table">
+                    <div class="folio-item-cell">
+                      <h3 class="folio-title">GameBase</h3>
+                      <span class="folio-types"> React Application </span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <!-- /folio-item -->
+
+            <!-- modal popups - begin
+	            ============================================================= -->
+            <div id="modal-01" class="popup-modal slider mfp-hide">
+              <div class="media">
+                <img src="images/portfolio/gamebase_screen.png" alt="" />
+              </div>
+
+              <div class="description-box">
+                <h4>GameBase</h4>
+                <p>
+                  A React Application that fetches and displays game information from the RAWG Video Games Database API.
+                </p>
+
+                <div class="categories">Web Developement</div>
+              </div>
+
+              <div class="link-box">
+                <a href="https://github.com/Clancinio/react-gamebase">GitHub</a>
+                <a href="#" class="popup-modal-dismiss">Close</a>
+              </div>
+            </div>
+            <!-- /modal-01 -->
+
+            <div id="modal-02" class="popup-modal slider mfp-hide">
+              <div class="media">
+                <img src="images/portfolio/modals/m-shutterbug.jpg" alt="" />
+              </div>
+
+              <div class="description-box">
+                <h4>Shutterbug</h4>
+                <p>
+                  Proin gravida nibh vel velit auctor aliquet. Aenean
+                  sollicitudin, lorem quis bibendum auctor, nisi elit consequat
+                  ipsum, nec sagittis sem nibh id elit.
+                </p>
+
+                <div class="categories">Web Design</div>
+              </div>
+
+              <div class="link-box">
+                <a href="http://www.behance.net">Details</a>
+                <a href="#" class="popup-modal-dismiss">Close</a>
+              </div>
+            </div>
+            <!-- /modal-02 -->
+
+            <div id="modal-03" class="popup-modal slider mfp-hide">
+              <div class="media">
+                <img src="images/portfolio/modals/m-clouds.jpg" alt="" />
+              </div>
+
+              <div class="description-box">
+                <h4>Clouds</h4>
+                <p>
+                  Proin gravida nibh vel velit auctor aliquet. Aenean
+                  sollicitudin, lorem quis bibendum auctor, nisi elit consequat
+                  ipsum, nec sagittis sem nibh id elit.
+                </p>
+
+                <div class="categories">Web Design</div>
+              </div>
+
+              <div class="link-box">
+                <a href="http://www.behance.net">Details</a>
+                <a href="#" class="popup-modal-dismiss">Close</a>
+              </div>
+            </div>
+            <!-- /modal-03 -->
+
+            <div id="modal-04" class="popup-modal slider mfp-hide">
+              <div class="media">
+                <img src="images/portfolio/modals/m-beetle.jpg" alt="" />
+              </div>
+
+              <div class="description-box">
+                <h4>Beetle</h4>
+                <p>
+                  Proin gravida nibh vel velit auctor aliquet. Aenean
+                  sollicitudin, lorem quis bibendum auctor, nisi elit consequat
+                  ipsum, nec sagittis sem nibh id elit.
+                </p>
+
+                <div class="categories">Branding</div>
+              </div>
+
+              <div class="link-box">
+                <a href="http://www.behance.net">Details</a>
+                <a href="#" class="popup-modal-dismiss">Close</a>
+              </div>
+            </div>
+            <!-- /modal-04 -->
+
+            <div id="modal-05" class="popup-modal slider mfp-hide">
+              <div class="media">
+                <img src="images/portfolio/modals/m-lighthouse.jpg" alt="" />
+              </div>
+
+              <div class="description-box">
+                <h4>Lighthouse</h4>
+                <p>
+                  Proin gravida nibh vel velit auctor aliquet. Aenean
+                  sollicitudin, lorem quis bibendum auctor, nisi elit consequat
+                  ipsum, nec sagittis sem nibh id elit.
+                </p>
+
+                <div class="categories">Web Development</div>
+              </div>
+
+              <div class="link-box">
+                <a href="http://www.behance.net">Details</a>
+                <a href="#" class="popup-modal-dismiss">Close</a>
+              </div>
+            </div>
+            <!-- /modal-05 -->
+
+            <div id="modal-06" class="popup-modal slider mfp-hide">
+              <div class="media">
+                <img src="images/portfolio/modals/m-salad.jpg" alt="" />
+              </div>
+
+              <div class="description-box">
+                <h4>Salad</h4>
+                <p>
+                  Proin gravida nibh vel velit auctor aliquet. Aenean
+                  sollicitudin, lorem quis bibendum auctor, nisi elit consequat
+                  ipsum, nec sagittis sem nibh id elit.
+                </p>
+
+                <div class="categories">Branding</div>
+              </div>
+
+              <div class="link-box">
+                <a href="http://www.behance.net">Details</a>
+                <a href="#" class="popup-modal-dismiss">Close</a>
+              </div>
+            </div>
+            <!-- /modal-06 -->
+
+            <!-- modal popups - end
+	            ============================================================= -->
+          </div>
+          <!-- /portfolio-wrapper -->
+        </div>
+        <!-- /twelve -->
+      </div>
+      <!-- /portfolio-content -->
+    </section>
+    <!-- /portfolio -->
+
+
+    <!-- contact
+   ================================================== -->
+    <section id="contact">
+      <div class="row section-intro">
+        <div class="col-twelve">
+          <h5>Contact</h5>
+          <h1>I'd Love To Hear From You.</h1>
+
+          <p class="lead">
+            Lorem ipsum Do commodo in proident enim in dolor cupidatat
+            adipisicing dolore officia nisi aliqua incididunt Ut veniam lorem
+            ipsum Consectetur ut in in eu do.
+          </p>
+        </div>
+      </div>
+      <!-- /section-intro -->
+
+      <div class="row contact-form">
+        <div class="col-twelve">
+          <!-- form -->
+          <form name="contactForm" id="contactForm" method="post" action="">
+            <fieldset>
+              <div class="form-field">
+                <input
+                  name="contactName"
+                  type="text"
+                  id="contactName"
+                  placeholder="Name"
+                  value=""
+                  minlength="2"
+                  required=""
+                />
+              </div>
+              <div class="form-field">
+                <input
+                  name="contactEmail"
+                  type="email"
+                  id="contactEmail"
+                  placeholder="Email"
+                  value=""
+                  required=""
+                />
+              </div>
+              <div class="form-field">
+                <input
+                  name="contactSubject"
+                  type="text"
+                  id="contactSubject"
+                  placeholder="Subject"
+                  value=""
+                />
+              </div>
+              <div class="form-field">
+                <textarea
+                  name="contactMessage"
+                  id="contactMessage"
+                  placeholder="message"
+                  rows="10"
+                  cols="50"
+                  required=""
+                ></textarea>
+              </div>
+              <div class="form-field">
+                <button class="submitform">Submit</button>
+                <div id="submit-loader">
+                  <div class="text-loader">Sending...</div>
+                  <div class="s-loader">
+                    <div class="bounce1"></div>
+                    <div class="bounce2"></div>
+                    <div class="bounce3"></div>
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+          </form>
+          <!-- Form End -->
+
+          <!-- contact-warning -->
+          <div id="message-warning"></div>
+          <!-- contact-success -->
+          <div id="message-success">
+            <i class="fa fa-check"></i>Your message was sent, thank you!<br />
+          </div>
+        </div>
+        <!-- /col-twelve -->
+      </div>
+      <!-- /contact-form -->
+
+      <!-- <div class="row contact-info">
+        <div class="col-four tab-full">
+          <div class="icon">
+            <i class="icon-pin"></i>
+          </div>
+
+          <h5>Where to find me</h5>
+
+          <p>
+            1600 Amphitheatre Parkway<br />
+            Mountain View, CA<br />
+            94043 US
+          </p>
+        </div>
+
+        <div class="col-four tab-full collapse">
+          <div class="icon">
+            <i class="icon-mail"></i>
+          </div>
+
+          <h5>Email Me At</h5>
+
+          <p>
+            someone@kardswebsite.com<br />
+            info@kardswebsite.com
+          </p>
+        </div>
+
+        <div class="col-four tab-full">
+          <div class="icon">
+            <i class="icon-phone"></i>
+          </div>
+
+          <h5>Call Me At</h5>
+
+          <p>
+            Phone: (+63) 555 1212<br />
+            Mobile: (+63) 555 0100<br />
+            Fax: (+63) 555 0101
+          </p>
+        </div>
+      </div> -->
+      <!-- /contact-info -->
+    </section>
+    <!-- /contact -->
+
+    <!-- footer
+   ================================================== -->
+
+    <footer>
+      <div class="row">
+        <div class="col-six tab-full pull-right social">
+          <ul class="footer-social">
+						<li>
+              <a href="#"><i class="fa fa-linkedin"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-github"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-instagram"></i></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="col-eight tab-full">
+          <div class="copyright">
+            <span>© Copyright 2018 </span>
+            <span
+              >Design by
+              <a href="http://www.styleshout.com/">styleshout</a></span
+            >
+            <span
+              >Distributed by
+              <a href="https://themewagon.com/">themewagon</a></span
+            >
+          </div>
+        </div>
+
+        <div id="go-top">
+          <a class="smoothscroll" title="Back to Top" href="#top"
+            ><i class="fa fa-long-arrow-up"></i
+          ></a>
+        </div>
+      </div>
+      <!-- /row -->
+    </footer>
+
+    <div id="preloader">
+      <div id="loader"></div>
     </div>
-  </footer>
-  <!-- Scripts -->
-  <script src="smoothScroll.js"></script>
-  <script>
-    // Get the modal
-    var modal = document.getElementById("myModal");
 
-    // Get the button that opens the modal
-    var btn = document.getElementById("myBtn");
-
-    // Get the <span> element that closes the modal
-    // var span = document.getElementsByClassName("close")[0];
-    var span = document.getElementsByClassName("skip")[0];
-    // When the user clicks the button, open the modal
-    btn.onclick = function () {
-      modal.style.display = "block";
-    };
-
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function () {
-      modal.style.display = "none";
-    };
-  </script>
-</body>
+    <!-- Java Script
+   ================================================== -->
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
